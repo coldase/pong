@@ -58,6 +58,7 @@ class Ball:
 		if self.direction == "R":
 			self.pos_x += self.speed
 		if self.direction == "L":
+			self.pos_x -= self.speed
 
 	def check_collision(self, p1, p2):
 		if p1.rect.colliderect(self.rect):
